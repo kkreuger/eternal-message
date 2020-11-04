@@ -1,0 +1,35 @@
+.signup {
+    padding: 50px 0;
+}
+
+body {
+    background-color: #B2DFDB;
+}
+
+.btn-basic {
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .signup-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+} 
+
+@media (min-width: 992px) {
+    .signup-wrapper {
+        grid-gap: 50px;
+    }
+
+    .btn-basic {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 54px;
+    }
+}

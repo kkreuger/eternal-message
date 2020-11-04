@@ -1,0 +1,23 @@
+<section class="signup">
+    <div class="container">
+        <div class="signup-wrapper">
+            <h1>Vul hier je gegevens in om in te loggen.</h1>
+            <div class="form-wrapper">       
+                <form class="" method="POST" action="/auth/inloggen">
+                    <h3>Vul je gegevens in</h3>
+                    {{> _alerts }}
+                    <div class="input-field">
+                        <label for="email">Email adres</label>
+                        <input id="email" name="email" type="email" placeholder="naam@email.com" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="password">Wachtwoord</label>
+                        <input id="password" name="password" type="password" placeholder="Vul je wachtwoord in" required>
+                    </div>
+                    <button style="width: 100%;" class="btn-basic" type="submit">Login</button>
+                    <a href="/auth/google" class="btn-google" type="button">Aanmelden met Google</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
